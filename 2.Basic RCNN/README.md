@@ -55,9 +55,9 @@ $ python3 inference.py -i <path_to_image> -m <path_to_model>
 
 ## Results 
 
-![alt-text-1](Output/1.before_nms.jpg "Before NMS") ![alt-text-2](Output/1.after_nms.jpg "After NMS")
+![alt-text-1](Output/1.before_nms.jpg)*Before NMS* ![alt-text-2](Output/1.after_nms.jpg )*After NMS*
 
-![alt-text-1](Output/8.before_nms.jpg "Before NMS") ![alt-text-2](Output/8.after_nms.jpg "After NMS")
+![alt-text-1](Output/8.before_nms.jpg)*Before NMS* ![alt-text-2](Output/8.after_nms.jpg)*After NMS*
 
 ## Improvements
 

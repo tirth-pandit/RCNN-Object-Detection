@@ -32,5 +32,3 @@
 1) https://learnopencv.com/selective-search-for-object-detection-cpp-python/
 2) http://vision.stanford.edu/teaching/cs231b_spring1415/slides/ssearch_schuyler.pdf
 
-
-# 2) Non Max Supression

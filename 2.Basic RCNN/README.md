@@ -19,10 +19,10 @@
 	2] http://ai.stanford.edu/~jkrause/cars/car_dataset.html
 
 - <b>[Extracted Region Proposals Dataset](https://drive.google.com/file/d/1Vi-bkG0SlGOvGP9bYFWeCGnlkgDe4FVr/view?usp=sharing)</b> 
-		&nbsp; &nbsp; &nbsp;Classes In Dataset
-			&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;1) Birds 
-			&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;2) Cars 
-			&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3) Negative Examples
+		&nbsp; &nbsp; &nbsp;Classes In Dataset</br>
+			&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;1) Birds </br> 
+			&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;2) Cars </br> 
+			&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;3) Negative Examples </br>
 
 
 ## Directory & Files 

@@ -13,12 +13,12 @@
 8. Use <b>Non-Max Suppression algorithm</b> to reduce the the bounding boxes using the probability scores of predictions and generate accurate boxes.
 
 ## Datasets
-- <b>[Raw Images Dataset](https://drive.google.com/file/d/1hAE40pEb1VY3rauYpd7BY2RSaxsoHq5p/view?usp=sharing) </b>
-	Created from 
-	1] http://www.vision.caltech.edu/visipedia/CUB-200.html
-	2] http://ai.stanford.edu/~jkrause/cars/car_dataset.html
+- <b>[Raw Images Dataset](https://drive.google.com/file/d/1hAE40pEb1VY3rauYpd7BY2RSaxsoHq5p/view?usp=sharing) </b></br>
+	Created from </br>
+	1] http://www.vision.caltech.edu/visipedia/CUB-200.html</br>
+	2] http://ai.stanford.edu/~jkrause/cars/car_dataset.html </br>
 
-- <b>[Extracted Region Proposals Dataset](https://drive.google.com/file/d/1Vi-bkG0SlGOvGP9bYFWeCGnlkgDe4FVr/view?usp=sharing)</b> 
+- <b>[Extracted Region Proposals Dataset](https://drive.google.com/file/d/1Vi-bkG0SlGOvGP9bYFWeCGnlkgDe4FVr/view?usp=sharing)</b> </bt>
 		&nbsp; &nbsp; &nbsp;Classes In Dataset</br>
 			&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;1) Birds </br> 
 			&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;2) Cars </br> 
@@ -26,20 +26,20 @@
 
 
 ## Directory & Files 
-&nbsp; &nbsp; &nbsp;<b>1. Region Proposal & Final_dataset_creation .ipynb</b>
-&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; Creates final proposal dataset on raw images by applying selective search 
-&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; Creates Negative examples by using IOU scores of proposal and ground Truth boxes.
+&nbsp; &nbsp; &nbsp;<b>1. Region Proposal & Final_dataset_creation .ipynb</b></br>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; Creates final proposal dataset on raw images by applying selective search </br>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; Creates Negative examples by using IOU scores of proposal and ground Truth boxes.</br>
 
-&nbsp; &nbsp; &nbsp;<b>2.Fine_tuning_model.ipynb</b>
-&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; Trains model on the final Dataset
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; VGG16 trained on imagenet is used as backbone 
+&nbsp; &nbsp; &nbsp;<b>2.Fine_tuning_model.ipynb</b></br>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; Trains model on the final Dataset</br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; VGG16 trained on imagenet is used as backbone </br>
 
-&nbsp; &nbsp; &nbsp;<b>3.inference.py</b>
-&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; Predicts the best matching proposal with object class
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Uses Non-max suppression to reduce unwanted boxes
+&nbsp; &nbsp; &nbsp;<b>3.inference.py</b></br>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; Predicts the best matching proposal with object class</br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Uses Non-max suppression to reduce unwanted boxes</br>
 
-&nbsp; &nbsp; &nbsp;<b>4.NMS.py</b>
-&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; NMS algorithm implementation
+&nbsp; &nbsp; &nbsp;<b>4.NMS.py</b></br>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; NMS algorithm implementation</br>
 
 ## Inference
 ```  
@@ -55,9 +55,9 @@ $ python3 inference.py -i <path_to_image> -m <path_to_model>
 
 ## Results 
 
-![alt-text-1](Output/1.before_nms.jpg ) ![alt-text-2](Output/1.after_nms.jpg)
+![alt-text-1](Output/1.before_nms.jpg "Before NMS") ![alt-text-2](Output/1.after_nms.jpg "After NMS")
 
-![alt-text-1](Output/8.before_nms.jpg ) ![alt-text-2](Output/8.after_nms.jpg)
+![alt-text-1](Output/8.before_nms.jpg "Before NMS") ![alt-text-2](Output/8.after_nms.jpg "After NMS")
 
 ## Improvements
 

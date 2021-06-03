@@ -5,7 +5,7 @@
 ## RCNN Working 
 1. Create Raw Dataset With Images and its labels along with bounding boxes annotations of Objects in image.
 2. Apply <b>Selective Search Algorithm</b> on images to segment the image and use <b>Region proposal algorithm</b> to create rectangular regions that may or may not contain object.
-3.    Filter out only those regions which have high <b>IOU Overlap</b> with ground truth bounding boxes ( Because they will cover object in the image )
+3.    Filter out only those regions which have high <b>IOU Overlap</b> with ground truth bounding boxes ( Because it covers object in the image )
 4. Create another dataset of these filtered regions with their original labels. Resize these region proposal to the size of neural network input size. Also create new class in this dataset which contains negative regions i.e image regions which do not contains object.
 5.  Use Pretrained Neural network for transfer learning.<b> Fine tune</b> it with the region proposal dataset with <b>K+1 output </b>classes ( K = number of object classes present ) . Addition of 1 is due to classifying extra class of Negative proposals.
 6. Neural Network is used for <b>feature generation</b> ( Here VGG16 trained on Imagenet is Used ). Classification head  have dense layers and <b> softmax</b> layer as output. <b>Binary svm</b> can also be used for classification after feature generation.
@@ -55,9 +55,9 @@ $ python3 inference.py -i <path_to_image> -m <path_to_model>
 
 ## Results 
 
-![alt-text-1](Output/1.before_nms.jpg)*Before NMS* ![alt-text-2](Output/1.after_nms.jpg )*After NMS*
+![alt-text-1](Output/1.before_nms.jpg "Before NMS") ![alt-text-2](Output/1.after_nms.jpg "After NMS")
 
-![alt-text-1](Output/8.before_nms.jpg)*Before NMS* ![alt-text-2](Output/8.after_nms.jpg)*After NMS*
+![alt-text-1](Output/8.before_nms.jpg "Before NMS") ![alt-text-2](Output/8.after_nms.jpg "After NMS")
 
 ## Improvements
 
